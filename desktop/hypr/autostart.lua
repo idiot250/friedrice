@@ -8,3 +8,7 @@ hl.on("hyprland.start", function()
 
 
 end)
+
+hl.on("hyprland.start", function()
+    hl.exec_cmd("fcitx5 -d --replace")
+end)

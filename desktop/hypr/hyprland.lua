@@ -1,6 +1,5 @@
 local terminal        = "kitty"
 local fileManager     = "yazi"
-local menu            = "rofi -show drun"
 
 hl.config({
 	general= {
@@ -37,7 +36,7 @@ hl.config({
  	               enabled  = true,
   		       size     = 2,
   		       passes   = 6,
-  		       vibrancy = 10,
+  		       vibrancy = 1,
 		}
 	},
 
@@ -46,6 +45,10 @@ hl.config({
 	},
 
 })
+
+-- Fcitx5 input method
+hl.env("XMODIFIERS", "@im=fcitx")
+hl.env("QT_IM_MODULE", "fcitx")
 
 --external
 require("keybinds")

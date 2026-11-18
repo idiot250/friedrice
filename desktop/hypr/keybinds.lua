@@ -1,6 +1,6 @@
 local mainMod = "SUPER"
 local terminal = "kitty"
-local menu = "rofi -show drun"
+local menu = "fuzzel"
 
 --wlogout when super m
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("wlogout"))
@@ -17,7 +17,7 @@ end)
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
 
 --ss utilty
-hl.bind("SUPER + S", hl.dsp.exec_cmd('grim -g "$(slurp)" - | tee ~/Pictures/ss/$(date "+%Y-%m-%d-%H-%M-%S").png | wl-copy'))
+hl.bind("SUPER + S", hl.dsp.exec_cmd('grim -g "$(slurp)" - | tee ~/pictures/ss/$(date "+%Y-%m-%d-%H-%M-%S").png | wl-copy'))
 
 -- Switch / move to workspaces 1-9
 for i = 1, 9 do
